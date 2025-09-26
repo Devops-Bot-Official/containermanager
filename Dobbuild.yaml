@@ -40,7 +40,7 @@ jobs:
         enabled: true
         private_repo: true
         # --- required / important fields your function expects ---
-        clone_dir: /home/crowuser/containermanagment
+        clone_dir: /home/crowuser/containermanagement
         source_url: env=SOURCE_URL
         branches: 
         - master
@@ -53,7 +53,7 @@ jobs:
         enabled: true
         image_name: env=IMAGE_NAME
         build_tag: V.0.0.1
-        dockerfile_path: /home/crowuser/containermanagment/container-manager/Dockerfile     
+        dockerfile_path: /home/crowuser/containermanagement/container-manager/Dockerfile     
 
   - name: docker push stage
     tasks:

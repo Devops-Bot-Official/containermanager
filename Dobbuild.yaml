@@ -52,7 +52,7 @@ jobs:
       docker_build:
         enabled: true
         image_name: env=IMAGE_NAME
-        build_tag: V.0.0.1
+        build_tag: V.0.0.2
         dockerfile_path: /home/crowuser/containermanagement/container-manager/Dockerfile     
 
   - name: docker push stage
@@ -61,6 +61,6 @@ jobs:
         enabled: true
         provider: azure
         image_name: env=IMAGE_NAME
-        image_tag: V.0.0.1
+        image_tag: V.0.0.2
         username: env=DOCKER_USERNAME
         password: env=DOCKER_PASSWORD
